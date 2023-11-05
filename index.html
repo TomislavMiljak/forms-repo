@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <span>Forms</span>
+    </header>
+    <form action="">
+        <fieldset>
+            <legend>Personal data</legend>
+            <label for="fname">Your first name*</label>
+            <input type="text" name="fname" id="fname" required 
+            placeholder="Your first name*"
+            minlength="2" maxlength="30">
+            <label for="lname">Your last name*</label>
+            <input type="text" name="lname" id="lname" required 
+            placeholder="Your last name*" minlength="2" maxlength="30">
+            <label for="street">Street:</label>
+            <input type="text" name="street" id="street" placeholder="E.g. My Street 1">
+            <label for="zipcode">Zipcode:</label>
+            <input type="text" name="zipcode" id="zipcode" placeholder="E.g. 04193">
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" placeholder="E.g. Townsville City">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="E.g. 0341 1234567" pattern="^(\+|0[0]?[0-9]{2,4}\s?)[0-9]{5,9}$">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="E.g. johndoe@example.com" minlength="2" maxlength="30" required>
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="comments" placeholder="Tell us more about yourself!*" minlength="50"></textarea>
+
+        </fieldset>
+        <fieldset>
+            <legend>Services</legend>
+            <h3>Web Design:</h3>
+					
+	        <input type="radio" name="Web Design" id="webdesign-individual" value="individual" checked>
+	        <label for="webdesign-individual" class="radio">Individual</label>
+					
+      
+					
+	        <input type="radio" name="Web Design" id="webdesign-template" value>
+            <label for="webdesign-template" class="radio">Template</label>
+					
+            <h3>Web Development:</h3>
+            <div>
+            	<input type="checkbox" name="html_css" id="html_css" />
+            	<label for="html_css" class="wd">HTML & CSS</label>
+            </div>
+            					
+            <div>
+            	<input type="checkbox" name="javascript"  id="javascript" />
+            	<label for="html_css" class="wd">Javascript</label>
+            </div>
+            					
+            <div>
+            	<input type="checkbox" name="mongodb"  id="mongodb" />
+            	<label for="html_css" class="wd">MongoDB</label>
+            </div>
+            <h3>Project Start:</h3>
+            <input type="date" min="2023-10-05" max="2023-12-31">
+            <h3>Project End:</h3>
+            <input type="date" min="2023-10-16" max="2023-12-31">
+            <h3>Category:</h3>
+            <select name="Category" id="Category">
+	        <!-- <option value="">--Please choose an option--</option> -->
+	
+		    <option value="personal">Personal</option>
+		    <!-- <option value="freelance">Freelance</option>
+		    <option value="corporate">Corporate</option> -->
+		    <option value="business">Business</option>
+		    <option value="government">Government</option>
+            </select>
+                    
+        </fieldset>
+        <button type="button">Order our services</button>
+    </form>
+   
+   
+   
+   
+   
+
+   
+   
+   
+</body>
+</html>
